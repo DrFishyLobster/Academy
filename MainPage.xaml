@@ -12,11 +12,23 @@
         <SplitView Name="SplitView"  CompactPaneLength="100" OpenPaneLength="300" DisplayMode="CompactOverlay" IsPaneOpen="False"
                    FontFamily="Segoe UI" >
             <SplitView.Pane>
-                <StackPanel Background="{ThemeResource SystemControlBackgroundBaseMediumHighBrush}">
-                    <Button Margin="5,5,5,5" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" 
-                            FontSize="48" Foreground="White" Background="Transparent" Height="100" Width="90"
-                            Click="OpenPane"/>
-                </StackPanel>
+                <ListBox Background="{ThemeResource SystemControlBackgroundBaseMediumHighBrush}">
+                    <ListBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="10,5,5,5" FontFamily="Segoe MDL2 Assets" Text="&#xE700;" 
+                            FontSize="50" Foreground="White" 
+                            />
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="10,5,30,5" FontFamily="Segoe MDL2 Assets" Text="&#xE109;" 
+                            FontSize="50" Foreground="White" 
+                            />
+                            <TextBlock Text="Add Event" Foreground="White" FontSize="20" />
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
             </SplitView.Pane>
         </SplitView>
     </StackPanel>

@@ -31,5 +31,10 @@ namespace Academy
         {
             SplitView.IsPaneOpen = !SplitView.IsPaneOpen;
         }
+
+        private void Add(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

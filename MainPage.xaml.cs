@@ -26,5 +26,10 @@ namespace Academy
         {
             this.InitializeComponent();
         }
+
+        private void OpenPane(object sender, RoutedEventArgs e)
+        {
+            SplitView.IsPaneOpen = !SplitView.IsPaneOpen;
+        }
     }
 }

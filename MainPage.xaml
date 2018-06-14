@@ -8,7 +8,16 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
-    </Grid>
+    <StackPanel Orientation="Horizontal" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <SplitView Name="SplitView"  CompactPaneLength="100" OpenPaneLength="300" DisplayMode="CompactOverlay" IsPaneOpen="False"
+                   FontFamily="Segoe UI" >
+            <SplitView.Pane>
+                <StackPanel Background="{ThemeResource SystemControlBackgroundBaseMediumHighBrush}">
+                    <Button Margin="5,5,5,5" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" 
+                            FontSize="48" Foreground="White" Background="Transparent" Height="100" Width="90"
+                            Click="OpenPane"/>
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>
+    </StackPanel>
 </Page>
